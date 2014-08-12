@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.ios.parse.logout" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSLogout</name>
+  <description>Plugin for iOS Parse Logout.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS Logout</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSLogout.js" name="iOSLogout" target="www/iOSLogout.js">
+    <clobbers target="window.iOSLogout" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSLogout">
+        <param name="ios-package" value="iOSLogout"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSLogout" value="iOSLogout"/>
+    </config-file>
+    <header-file src="src/ios/iOSLogout.h" />
+    <source-file src="src/ios/iOSLogout.m" />
+  </platform>
+</plugin>
