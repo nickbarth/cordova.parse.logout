@@ -17,7 +17,7 @@ window.iOSLogout(function () {
 ## Adding the Plugin ##
 
 ```
-  cordova plugin add https://github.com/nickbarth/cordova.ios.parse.logout.git
+  cordova plugin add https://github.com/nickbarth/cordova.parse.logout
 ```
 
 ## LICENSE ##
