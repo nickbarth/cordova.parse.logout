@@ -7,7 +7,7 @@
   <description>Plugin for iOS Parse Logout.</description>
   <author>Nick Barth</author>
   <keywords>iOS Logout</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSLogout.js" name="iOSLogout" target="www/iOSLogout.js">
