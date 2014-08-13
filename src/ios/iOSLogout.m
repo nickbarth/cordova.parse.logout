@@ -8,9 +8,9 @@
     self.callbackId = command.callbackId;
 
     PFUser *user = [PFUser currentUser];
-    PFInstallation *currentLogoutation = [PFInstallation currentLogoutation];
-    [[PFInstallation currentLogoutation] setObject:@"" forKey:@"userId"];
-    [[PFInstallation currentLogoutation] saveEventually];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [[PFInstallation currentInstallation] setObject:@"" forKey:@"userId"];
+    [[PFInstallation currentInstallation] saveEventually];
     [PFUser logOut];
 
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
